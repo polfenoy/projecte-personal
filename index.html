@@ -3,62 +3,303 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projecte Personal de pol f</title>
+    <title>Què va marcar l'evolució musical dels Beatles?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a href="#" class="brand">Projecte Personal</a>
-        <nav class="nav" aria-label="Navegació principal">
-          <a href="#inici">Inici</a>
-          <a href="#sobre">Sobre el projecte</a>
-          <a href="#dades">Dades</a>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a href="#inici" class="brand">
+          <span class="brand-disc" aria-hidden="true"></span>
+          <span>The Beatles · Evolució en dades</span>
+        </a>
+        <nav class="topbar-nav" aria-label="Seccions">
+          <a href="#relat">Relat visual</a>
+          <a href="#explorador">Explorador</a>
+          <a href="#dades-nota">Sobre les dades</a>
         </nav>
       </div>
     </header>
 
     <main>
+      <!-- HERO -->
       <section id="inici" class="hero">
-        <div class="container">
-          <p class="eyebrow">Prototip inicial</p>
-          <h1>Títol del projecte</h1>
-          <p class="lead">
-            Aquesta és la base HTML, CSS i JavaScript del projecte. A partir d'aquí podem construir l'estructura, el disseny i les interaccions.
+        <div class="hero-inner">
+          <p class="eyebrow">Assaig visual interactiu · 1963–1970</p>
+          <h1>Què va marcar l'evolució musical dels Beatles?</h1>
+          <p class="hero-lead">
+            En només set anys, quatre músics de Liverpool van passar de gravar un disc sencer en un sol dia a construir cançons de set minuts amb desenes d'acords i setmanes d'estudi. Baixa per veure com <strong>les mateixes 28 cançons</strong> es reorganitzen davant dels teus ulls segons cada paràmetre.
           </p>
+
+          <div class="hero-stats" aria-label="Resum de la mostra">
+            <div class="stat-pill">
+              <span class="stat-num" id="stat-songs">28</span>
+              <span class="stat-label">cançons clau</span>
+            </div>
+            <div class="stat-pill">
+              <span class="stat-num">10</span>
+              <span class="stat-label">àlbums (1963–1970)</span>
+            </div>
+            <div class="stat-pill">
+              <span class="stat-num">7</span>
+              <span class="stat-label">paràmetres musicals</span>
+            </div>
+          </div>
+
+          <a href="#relat" class="scroll-cta">
+            Comença a explorar
+            <span aria-hidden="true">↓</span>
+          </a>
         </div>
       </section>
 
-      <section id="sobre" class="section">
-        <div class="container grid-2">
-          <div>
-            <h2>La pregunta</h2>
-            <p>
-              Espai reservat per a la pregunta d'investigació i el plantejament del projecte.
-            </p>
+      <!-- SCROLLYTELLING STAGE + NARRATIVE -->
+      <section id="relat" class="scrolly-section" aria-label="Relat interactiu de dades">
+        <div class="scrolly-layout">
+          <!-- LEFT: NARRATIVE STEPS -->
+          <div class="scrolly-steps">
+            <article class="step is-active" data-view="timeline" tabindex="0">
+              <span class="step-kicker">01 · El catàleg</span>
+              <h2>Cada punt és una cançó. Cada color, qui la lidera.</h2>
+              <p>
+                Abans de mesurar res, posem les 28 cançons en fila cronològica, agrupades per àlbum des de <em>Please Please Me</em> (1963) fins a <em>Let It Be</em> (1970).
+              </p>
+              <p>
+                Al principi el duet Lennon–McCartney acapara gairebé tot el repertori. Fixa't en els punts verds: George Harrison va guanyant presència fins a firmar alguns dels cims dels últims discos.
+              </p>
+              <p class="step-hint">Passa el ratolí per qualsevol punt o fes-hi clic per obrir-ne la fitxa.</p>
+            </article>
+
+            <article class="step" data-view="duration" tabindex="0">
+              <span class="step-kicker">02 · La durada</span>
+              <h2>El motlle dels 2 minuts i mig es queda petit</h2>
+              <p>
+                El 1963 la ràdio AM dictava llei: si una cançó passava dels 2 minuts i mig, costava que la punxessin. Mira com gairebé tots els primers temes s'amunteguen per sota la línia discontínua.
+              </p>
+              <p>
+                A partir de <em>Revolver</em> (1966) el sostre es trenca. Dos anys després, <em>Hey Jude</em> supera els 7 minuts i <em>I Want You (She's So Heavy)</em> frega els 8.
+              </p>
+            </article>
+
+            <article class="step" data-view="chords" tabindex="0">
+              <span class="step-kicker">03 · Els acords</span>
+              <h2>De 4 acords de rock'n'roll a laberints harmònics</h2>
+              <p>
+                Ara els mateixos punts pugen segons el <strong>nombre d'acords diferents</strong> de cada tema i creixen de mida. Els inicis funcionen amb progressions directes i eficaces de 4 a 6 acords.
+              </p>
+              <p>
+                Però ben aviat entren modulacions, acords disminuïts i cadències inesperades: <em>Penny Lane</em>, <em>Something</em> o <em>You Never Give Me Your Money</em> multipliquen la paleta harmònica per tres.
+              </p>
+            </article>
+
+            <article class="step" data-view="structure" tabindex="0">
+              <span class="step-kicker">04 · L'estructura</span>
+              <h2>Quan la forma clàssica deixa de ser suficient</h2>
+              <p>
+                Si agrupem les cançons per la seva <strong>estructura interna</strong> i mantenim els anys d'esquerra a dreta, apareix una diagonal clara.
+              </p>
+              <p>
+                El format <strong>AABA</strong> dels primers èxits deixa pas a estructures expandides amb ponts i codas llargues, fins a desembocar en suites i collages sonors com <em>A Day in the Life</em> o <em>Happiness Is a Warm Gun</em>.
+              </p>
+            </article>
+
+            <article class="step" data-view="recording" tabindex="0">
+              <span class="step-kicker">05 · Els dies de gravació</span>
+              <h2>El veritable punt d'inflexió: deixar els escenaris</h2>
+              <p>
+                L'agost de 1966 els Beatles fan l'últim concert en directe. Aquesta línia vertical ho canvia tot: l'estudi d'Abbey Road deixa de ser un lloc per enregistrar ràpid i es converteix en un instrument més.
+              </p>
+              <p>
+                Mentre <em>Please Please Me</em> es va gravar en <strong>1 sol dia</strong>, peces com <em>Strawberry Fields Forever</em> o <em>A Day in the Life</em> van requerir setmanes de proves, cintes i capes.
+              </p>
+            </article>
+
+            <article class="step" data-view="explore" tabindex="0" id="explorador">
+              <span class="step-kicker">06 · El teu laboratori</span>
+              <h2>Creua els paràmetres i comprova-ho tu mateix</h2>
+              <p>
+                Ara tens el control total del gràfic. Tria quin paràmetre vols a l'eix horitzontal, quin al vertical i què controla la mida dels punts.
+              </p>
+              <p>
+                Pots filtrar per autor clicant la llegenda o per estructura, i inspeccionar qualsevol cançó per veure'n els acords, l'estructura i els dies d'estudi.
+              </p>
+            </article>
           </div>
-          <div>
-            <h2>Estat</h2>
-            <p>
-              Servidor local actiu i fitxers base creats (`index.html`, `style.css`, `script.js`).
-            </p>
+
+          <!-- RIGHT: STICKY INTERACTIVE VISUALIZATION -->
+          <div class="scrolly-stage-col">
+            <div class="stage-card">
+              <!-- TOP BAR: VIEW SWITCHER + AUTHOR LEGEND -->
+              <div class="stage-header">
+                <div class="view-tabs" role="tablist" aria-label="Canviar representació">
+                  <button class="view-tab is-active" data-view="timeline" role="tab" aria-selected="true">1. Catàleg</button>
+                  <button class="view-tab" data-view="duration" role="tab" aria-selected="false">2. Durada</button>
+                  <button class="view-tab" data-view="chords" role="tab" aria-selected="false">3. Acords</button>
+                  <button class="view-tab" data-view="structure" role="tab" aria-selected="false">4. Estructura</button>
+                  <button class="view-tab" data-view="recording" role="tab" aria-selected="false">5. Gravació</button>
+                  <button class="view-tab" data-view="explore" role="tab" aria-selected="false">6. Lliure</button>
+                </div>
+
+                <div class="stage-title-row">
+                  <div>
+                    <h3 id="chart-title">Catàleg cronològic per àlbum</h3>
+                    <p id="chart-subtitle" class="chart-subtitle">Cada cercle representa una cançó ordenada per any de publicació.</p>
+                  </div>
+                  <div class="chart-counter" id="chart-counter">28 / 28 cançons</div>
+                </div>
+
+                <!-- AUTHOR FILTER LEGEND -->
+                <div class="legend-bar" aria-label="Filtrar per autor principal">
+                  <span class="legend-prefix">Autor principal:</span>
+                  <button class="legend-chip is-selected" data-author="all">Tots</button>
+                  <button class="legend-chip" data-author="Lennon">
+                    <span class="swatch swatch-lennon"></span>Lennon
+                  </button>
+                  <button class="legend-chip" data-author="McCartney">
+                    <span class="swatch swatch-mccartney"></span>McCartney
+                  </button>
+                  <button class="legend-chip" data-author="Harrison">
+                    <span class="swatch swatch-harrison"></span>Harrison
+                  </button>
+                  <button class="legend-chip" data-author="Starr">
+                    <span class="swatch swatch-starr"></span>Starr
+                  </button>
+                </div>
+
+                <!-- EXPLORER CONTROLS (visible in view 6) -->
+                <div class="explorer-controls" id="explorer-controls" hidden>
+                  <label class="control-group">
+                    <span>Eix X</span>
+                    <select id="select-x">
+                      <option value="year" selected>Any / Àlbum</option>
+                      <option value="durationSec">Durada (segons)</option>
+                      <option value="chordCount">Nombre d'acords</option>
+                      <option value="recordingDays">Dies de gravació</option>
+                    </select>
+                  </label>
+                  <label class="control-group">
+                    <span>Eix Y</span>
+                    <select id="select-y">
+                      <option value="chordCount" selected>Nombre d'acords</option>
+                      <option value="durationSec">Durada (segons)</option>
+                      <option value="recordingDays">Dies de gravació</option>
+                    </select>
+                  </label>
+                  <label class="control-group">
+                    <span>Mida del punt</span>
+                    <select id="select-size">
+                      <option value="recordingDays" selected>Dies de gravació</option>
+                      <option value="chordCount">Nombre d'acords</option>
+                      <option value="durationSec">Durada</option>
+                      <option value="fixed">Mida fixa</option>
+                    </select>
+                  </label>
+                  <label class="control-group">
+                    <span>Estructura</span>
+                    <select id="select-structure">
+                      <option value="all" selected>Totes</option>
+                      <option value="AABA clàssica">AABA clàssica</option>
+                      <option value="Vers–Tornada">Vers–Tornada</option>
+                      <option value="Estructura expandida">Estructura expandida</option>
+                      <option value="Suite / Experimental">Suite / Experimental</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+
+              <!-- VISUALIZATION CANVAS (SVG AXES + MORPHING HTML SONG NODES) -->
+              <div class="chart-viewport" id="chart-viewport">
+                <svg class="chart-axes" id="chart-axes" aria-hidden="true"></svg>
+                <div class="chart-annotations" id="chart-annotations" aria-hidden="true"></div>
+                <div class="chart-nodes" id="chart-nodes" role="list" aria-label="Cançons dels Beatles"></div>
+
+                <!-- FLOATING HOVER TOOLTIP -->
+                <div class="tooltip" id="tooltip" role="status" aria-live="polite" hidden></div>
+              </div>
+
+              <!-- SONG DETAIL INSPECTOR BAR -->
+              <div class="inspector" id="inspector" aria-live="polite">
+                <div class="inspector-empty" id="inspector-empty">
+                  Fes clic sobre qualsevol punt del gràfic per inspeccionar la fitxa completa de la cançó (àlbum, durada, acords, estructura i dies de gravació).
+                </div>
+                <div class="inspector-content" id="inspector-content" hidden>
+                  <div class="inspector-top">
+                    <div>
+                      <span class="inspector-badge" id="ins-author-badge"></span>
+                      <h4 id="ins-title"></h4>
+                      <p class="inspector-meta" id="ins-album"></p>
+                    </div>
+                    <button class="inspector-close" id="ins-close" aria-label="Tancar fitxa">×</button>
+                  </div>
+                  <div class="inspector-metrics">
+                    <div class="metric-box">
+                      <span class="metric-label">Durada</span>
+                      <strong id="ins-duration"></strong>
+                    </div>
+                    <div class="metric-box">
+                      <span class="metric-label">Acords</span>
+                      <strong id="ins-chord-count"></strong>
+                    </div>
+                    <div class="metric-box">
+                      <span class="metric-label">Gravació</span>
+                      <strong id="ins-days"></strong>
+                    </div>
+                    <div class="metric-box">
+                      <span class="metric-label">Estructura</span>
+                      <strong id="ins-structure"></strong>
+                    </div>
+                  </div>
+                  <div class="inspector-extra">
+                    <div>
+                      <span class="metric-label">Paleta d'acords</span>
+                      <div class="chord-pills" id="ins-chords"></div>
+                    </div>
+                    <p class="inspector-note" id="ins-note"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="dades" class="section section-muted">
-        <div class="container">
-          <h2>Secció de contingut</h2>
-          <p>
-            Aquí hi podem afegir visualitzacions, arxius, narrativa o qualsevol component que necessitis.
-          </p>
+      <!-- SUMMARY / EDITABLE DATA NOTE -->
+      <section id="dades-nota" class="methodology">
+        <div class="methodology-inner">
+          <div class="method-col">
+            <p class="eyebrow">Conclusions visuals</p>
+            <h2>Quatre canvis que expliquen set anys</h2>
+            <ul class="takeaways">
+              <li><strong>Format més lliure:</strong> de singles pensats per a la ràdio (~2:15) a peces llargues sense límit comercial.</li>
+              <li><strong>Harmonia més rica:</strong> els acords per cançó es multipliquen amb modulacions i préstecs modals.</li>
+              <li><strong>Estructures obertes:</strong> l'esquema AABA cedeix pas a ponts múltiples, codas i suites enllaçades.</li>
+              <li><strong>L'estudi com a laboratori:</strong> deixar les gires el 1966 multiplica per 10 o 20 els dies dedicats a cada cançó.</li>
+            </ul>
+          </div>
+          <div class="method-col method-box">
+            <p class="eyebrow">Transparència i edició</p>
+            <h3>Com personalitzar les dades</h3>
+            <p>
+              Les dades carregades ara mateix són una <strong>base inicial provisional (suposició)</strong> elaborada a partir de durades, autoria principal i estimacions d'acords, estructures i dies de gravació perquè puguis provar el funcionament de la web.
+            </p>
+            <p>
+              Per ajustar-les o afegir-hi les teves pròpies cançons, només cal editar la llista <code>SONGS</code> al principi de <code>script.js</code>: totes les visualitzacions, escales i transicions s'actualitzen automàticament.
+            </p>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container">
-        <p>ELISAVA · Projecte Personal</p>
+      <div class="footer-inner">
+        <span>Projecte personal · ELISAVA</span>
+        <span>HTML, CSS i JavaScript pur · Sense llibreries externes</span>
       </div>
     </footer>
 
