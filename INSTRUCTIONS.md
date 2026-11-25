@@ -1,25 +1,17 @@
 <!--
 INSTRUCTIONS.md · ¿Qué hacer y qué no hacer?
-El criterio de aceptación: las condiciones que tiene que cumplir el resultado
-para darlo por bueno. Se escribe ANTES de pedir, no después de ver el resultado.
-Regla: si no se puede comprobar mirando el resultado, no es criterio. Es un deseo.
-La mitad sale de tu CONTEXT.md (tono, decisiones, lo que falta, hipótesis).
-Copia el bloque una vez por petición. Se va ajustando.
+Me gustaría una web donde se pudieran ver los datos que he recogido, si estos datos no se encuentran te los puedes inventar y despues lo voy a ir personalizando manualmente para asegurarme de que son correctos.
 -->
 
-# INSTRUCTIONS · [Título de tu proyecto]
+# INSTRUCTIONS · La evolución musical de los Beatles
 
 ## [dd/mm] · [Nombre corto de la petición]
 
-QUIERO: [qué pido, en una frase].
+QUIERO: Reflejar en una pagina web la evolución musical de los Beatles a través de los parametros de sus canciones y algunas otras características..
 
 SERÁ BUENO SI:
-- [condición comprobable]
-- [condición comprobable]
-- [condición comprobable]
+Estos fuesen muy visuales, y entre una representación y otra hubiese una transición interesante, que se pudiera entender bien como cambian las diferentes representaciones de datos.
 
 NO SIRVE SI:
-- [causa de descarte]
-- [causa de descarte]
-
-LO SABRÉ PORQUE: [cómo lo compruebo, en concreto].
+No se entienden las representaciones y causan confusión
+LO SABRÉ PORQUE: no seré capaz de entender los datos representados.

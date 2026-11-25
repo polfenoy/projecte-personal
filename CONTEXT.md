@@ -1,39 +1,32 @@
 <!--
 CONTEXT.md · ¿De qué va mi proyecto y qué está decidido?
-Es el mapa de tu proyecto, no su documentación: lo mínimo para que alguien que
-no te conoce (persona o IA) entienda qué haces, con qué y qué está decidido.
-Si algo es largo (la memoria, los datos), aquí solo dices que existe y dónde está.
-Se actualiza cada vez que decides algo. Va en los archivos del proyecto de ChatGPT.
--->
+Mi proyecto va de la evolución del grupo musical The Beatles, quiero explicar su evolución a través de los parámetros de sus canciones y otras caracteristicas del grupo.
 
-# CONTEXT · [Título de tu proyecto]
-Última actualización: [dd/mm/aaaa]
+# CONTEXT · Evolución de los Beatles
+Última actualización: [25/11/2026]
 
 ## La pregunta
-[Tu pregunta de investigación, tal como la entregaste].
+Què va moarcar la evolució musical dels Beatles?
 
 ## Los datos
-- [Fuente 1: qué es, de qué fechas, cuántos registros].
-- [Fuente 2].
-- Falta: [huecos en los datos y por qué].
-- No tengo: [lo que no tienes y la IA no debe suponer].
+- Los datos que se tabajan son: El nombre de la canción, el album, la duración de cada canión, el autor, los actordes que usaron y la cantidad, la estructura, y los dias de gravación.
 
 ## El tono
-[Dos o tres palabras: «íntimo, sin reproches»].
-[Una imagen: «como una carta que no se envía»].
+[Dos o tres palabras: divertido pero formal.
+[Una imagen: ?
 
 ## Referentes
-- [Referente]: [qué tomas de él, y qué no].
-- [Contrarreferente]: [lo que NO quieres parecer].
+- [Referente]: me gusta este proyecto: https://pudding.cool/2024/11/love-songs/
+- [Contrarreferente]: No quiero hacer una pagina donde no haya interacción.
 
 ## Decisiones
-- [dd/mm] · [Qué decidiste]. Motivo: [por qué].
+??
 
 ## Hipótesis (sin comprobar)
-- [Lo que sospechas, pero todavía no has demostrado].
+??
 
 ## Descartado
-- [dd/mm] · [Qué descartaste]: [por qué].
+??
 
 ## Estado
-[Qué está hecho]. Siguiente: [qué toca ahora].
+??
